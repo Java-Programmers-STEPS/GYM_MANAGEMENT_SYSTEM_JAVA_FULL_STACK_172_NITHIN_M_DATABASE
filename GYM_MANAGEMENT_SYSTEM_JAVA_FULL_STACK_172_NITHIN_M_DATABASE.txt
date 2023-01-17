@@ -1,0 +1,43 @@
+GYM MANAGEMENT SYSTEM DATABASE
+---------------------------------------------------------------------------------------
+
+DATABASE 
+	Create database Gymmanagementsystemtest
+	Create database Gymmanagementsystemfinal
+---------------------------------------------------------------------------------------
+
+Tables
+---------------------------------------------------------------------------------------
+	Table name:Registration
+
+	Query:
+	CREATE TABLE registration(
+      regid INT AUTO_INCREMENT NOT NULL,
+	firstname VARCHAR(50)NOT NULL,
+	lastname VARCHAR(50)NOT NULL,
+	age DATE NOT NULL,
+	gender VARCHAR(8)NOT NULL,
+	bloodgroup VARCHAR(4)NOT NULL,
+	address VARCHAR(1000)NOT NULL,
+	occupation VARCHAR(50)NOT NULL,
+	contactnumber INT(10)NOT NULL,
+	email VARCHAR(100)NOT NULL,
+	interestedtraining VARCHAR(40)NOT NULL,
+	dateofjoining DATE NOT NULL,
+	preferredtiming TIME NOT NULL,
+	password VARCHAR(12)NOT NULL,
+	confirmpassword VARCHAR(12)NOT NULL,
+	PRIMARY KEY(regid)
+	);
+---------------------------------------------------------------------------------------
+	Table name:Training
+
+	Query:
+	CREATE TABLE training(
+	trainingid INT AUTO_INCREMENT NOT NULL,
+	trainingname VARCHAR(40)NOT NULL,
+	trainingprice INT(5)NOT NULL,
+	PRIMARY KEY(trainingid)
+	);
+---------------------------------------------------------------------------------------
+
